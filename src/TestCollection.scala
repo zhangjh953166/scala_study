@@ -3,13 +3,13 @@
 object TestList {
   /**
   def main(args: Array[String]){
-    // ×Ö·û´®ÁĞ±í
+    // å­—ç¬¦ä¸²åˆ—è¡¨
 val site: List[String] = List("Runoob", "Google", "Baidu")
-// ÕûĞÍÁĞ±í
+// æ•´å‹åˆ—è¡¨
 val nums: List[Int] = List(1, 2, 3, 4)
-// ¿ÕÁĞ±í
+// ç©ºåˆ—è¡¨
 val empty: List[Nothing] = List()
-// ¶şÎ¬ÁĞ±í
+// äºŒç»´åˆ—è¡¨
 val dim: List[List[Int]] =
    List(
       List(1, 0, 0),
@@ -21,13 +21,13 @@ val dim: List[List[Int]] =
   */
   /**
   def main(args:Array[String]){
-    // ×Ö·û´®ÁĞ±í
+    // å­—ç¬¦ä¸²åˆ—è¡¨
 val site = "Runoob" :: ("Google" :: ("Baidu" :: Nil))
-// ÕûĞÍÁĞ±í
+// æ•´å‹åˆ—è¡¨
 val nums = 1 :: (2 :: (3 :: (4 :: Nil)))
-// ¿ÕÁĞ±í
+// ç©ºåˆ—è¡¨
 val empty = Nil
-// ¶şÎ¬ÁĞ±í
+// äºŒç»´åˆ—è¡¨
 val dim = (1 :: (0 :: (0 :: Nil))) ::
           (0 :: (1 :: (0 :: Nil))) ::
           (0 :: (0 :: (1 :: Nil))) :: Nil
@@ -39,46 +39,46 @@ val dim = (1 :: (0 :: (0 :: Nil))) ::
       val site = "Runoob" :: ("Google" :: ("Baidu" :: Nil))
       val nums = Nil
 
-      println( "µÚÒ»ÍøÕ¾ÊÇ : " + site.head )
-      println( "×îºóÒ»¸öÍøÕ¾ÊÇ : " + site.tail )
-      println( "²é¿´ÁĞ±í site ÊÇ·ñÎª¿Õ : " + site.isEmpty )
-      println( "²é¿´ nums ÊÇ·ñÎª¿Õ : " + nums.isEmpty )
+      println( "ç¬¬ä¸€ç½‘ç«™æ˜¯ : " + site.head )
+      println( "æœ€åä¸€ä¸ªç½‘ç«™æ˜¯ : " + site.tail )
+      println( "æŸ¥çœ‹åˆ—è¡¨ site æ˜¯å¦ä¸ºç©º : " + site.isEmpty )
+      println( "æŸ¥çœ‹ nums æ˜¯å¦ä¸ºç©º : " + nums.isEmpty )
    }
   def main(args:Array[String]){
     val site1 = "Runoob" :: ("Google" :: ("Baidu" :: Nil))
       val site2 = "Facebook" :: ("Taobao" :: Nil)
-      // Ê¹ÓÃ ::: ÔËËã·û
+      // ä½¿ç”¨ ::: è¿ç®—ç¬¦
       var fruit = site1 ::: site2
       println( "site1 ::: site2 : " + fruit )
-      // Ê¹ÓÃ Set.:::() ·½·¨
+      // ä½¿ç”¨ Set.:::() æ–¹æ³•
       fruit = site1.:::(site2)
       println( "site1.:::(site2) : " + fruit )
-      // Ê¹ÓÃ concat ·½·¨
+      // ä½¿ç”¨ concat æ–¹æ³•
       fruit = List.concat(site1, site2)
       println( "List.concat(site1, site2) : " + fruit  )
   }
 
   def main(args: Array[String]) {
-      val site = List.fill(3)("Runoob") // ÖØ¸´ Runoob 3´Î
+      val site = List.fill(3)("Runoob") // é‡å¤ Runoob 3æ¬¡
       println( "site : " + site  )
-      val num = List.fill(10)(2)         // ÖØ¸´ÔªËØ 2, 10 ´Î
+      val num = List.fill(10)(2)         // é‡å¤å…ƒç´  2, 10 æ¬¡
       println( "num : " + num  )
    }
 
    def main(args: Array[String]) {
-      // Í¨¹ı¸ø¶¨µÄº¯Êı´´½¨ 5 ¸öÔªËØ
+      // é€šè¿‡ç»™å®šçš„å‡½æ•°åˆ›å»º 5 ä¸ªå…ƒç´ 
       val squares = List.tabulate(6)(n => n * n)
-      println( "Ò»Î¬ : " + squares  )
-      // ´´½¨¶şÎ¬ÁĞ±í
+      println( "ä¸€ç»´ : " + squares  )
+      // åˆ›å»ºäºŒç»´åˆ—è¡¨
       val mul = List.tabulate( 4,5 )( _ * _ )      
-      println( "¶àÎ¬ : " + mul  )
+      println( "å¤šç»´ : " + mul  )
    }
 
    def main(args: Array[String]) {
       val site = "Runoob" :: ("Google" :: ("Baidu" :: Nil))
-      println( "site ·´×ªÇ° : " + site )
+      println( "site åè½¬å‰ : " + site )
 
-      println( "site ·´×ªÇ° : " + site.reverse )
+      println( "site åè½¬å‰ : " + site.reverse )
    }
    * 
    */
@@ -107,34 +107,34 @@ object TestSet{
       val site = Set("Runoob", "Google", "Baidu")
       val nums: Set[Int] = Set()
 
-      println( "µÚÒ»ÍøÕ¾ÊÇ : " + site.head )
-      println( "×îºóÒ»¸öÍøÕ¾ÊÇ : " + site.tail )
-      println( "²é¿´ÁĞ±í site ÊÇ·ñÎª¿Õ : " + site.isEmpty )
-      println( "²é¿´ nums ÊÇ·ñÎª¿Õ : " + nums.isEmpty )
+      println( "ç¬¬ä¸€ç½‘ç«™æ˜¯ : " + site.head )
+      println( "æœ€åä¸€ä¸ªç½‘ç«™æ˜¯ : " + site.tail )
+      println( "æŸ¥çœ‹åˆ—è¡¨ site æ˜¯å¦ä¸ºç©º : " + site.isEmpty )
+      println( "æŸ¥çœ‹ nums æ˜¯å¦ä¸ºç©º : " + nums.isEmpty )
    }
 
    def main(args: Array[String]) {
       val site1 = Set("Runoob", "Google", "Baidu")
       val site2 = Set("Faceboook", "Taobao")
-      // ++ ×÷ÎªÔËËã·ûÊ¹ÓÃ
+      // ++ ä½œä¸ºè¿ç®—ç¬¦ä½¿ç”¨
       var site = site1 ++ site2
       println( "site1 ++ site2 : " + site )
-      //  ++ ×÷Îª·½·¨Ê¹ÓÃ
+      //  ++ ä½œä¸ºæ–¹æ³•ä½¿ç”¨
       site = site1.++(site2)
       println( "site1.++(site2) : " + site )
    }
 
   def main(args: Array[String]) {
       val num = Set(5,6,9,20,30,45)
-      // ²éÕÒ¼¯ºÏÖĞ×î´óÓë×îĞ¡ÔªËØ
-      println( "Set(5,6,9,20,30,45) ¼¯ºÏÖĞµÄ×îĞ¡ÔªËØÊÇ : " + num.min )
-      println( "Set(5,6,9,20,30,45) ¼¯ºÏÖĞµÄ×î´óÔªËØÊÇ : " + num.max )
+      // æŸ¥æ‰¾é›†åˆä¸­æœ€å¤§ä¸æœ€å°å…ƒç´ 
+      println( "Set(5,6,9,20,30,45) é›†åˆä¸­çš„æœ€å°å…ƒç´ æ˜¯ : " + num.min )
+      println( "Set(5,6,9,20,30,45) é›†åˆä¸­çš„æœ€å¤§å…ƒç´ æ˜¯ : " + num.max )
    }
 
   def main(args: Array[String]) {
       val num1 = Set(5,6,9,20,30,45)
       val num2 = Set(50,60,9,20,35,55)
-      // ½»¼¯
+      // äº¤é›†
       println( "num1.&(num2) : " + num1.&(num2) )
       println( "num1.intersect(num2) : " + num1.intersect(num2) )
    }
@@ -151,10 +151,10 @@ object TestMap{
 
       val nums: Map[Int, Int] = Map()
 
-      println( "colors ÖĞµÄ¼üÎª : " + colors.keys )
-      println( "colors ÖĞµÄÖµÎª : " + colors.values )
-      println( "¼ì²â colors ÊÇ·ñÎª¿Õ : " + colors.isEmpty )
-      println( "¼ì²â nums ÊÇ·ñÎª¿Õ : " + nums.isEmpty )
+      println( "colors ä¸­çš„é”®ä¸º : " + colors.keys )
+      println( "colors ä¸­çš„å€¼ä¸º : " + colors.values )
+      println( "æ£€æµ‹ colors æ˜¯å¦ä¸ºç©º : " + colors.isEmpty )
+      println( "æ£€æµ‹ nums æ˜¯å¦ä¸ºç©º : " + nums.isEmpty )
    }
 
      def main(args: Array[String]) {
@@ -164,10 +164,10 @@ object TestMap{
       val colors2 = Map("blue" -> "#0033FF",
                         "yellow" -> "#FFFF00",
                         "red" -> "#FF0000")
-      //  ++ ×÷ÎªÔËËã·û
+      //  ++ ä½œä¸ºè¿ç®—ç¬¦
       var colors = colors1 ++ colors2
       println( "colors1 ++ colors2 : " + colors )
-      //  ++ ×÷Îª·½·¨
+      //  ++ ä½œä¸ºæ–¹æ³•
       colors = colors1.++(colors2)
       println( "colors1.++(colors2)) : " + colors )
    }
@@ -188,19 +188,18 @@ object TestTuple{
    def main(args: Array[String]) {
       val t = (4,3,2,1)
       val sum = t._1 + t._2 + t._3 + t._4
-      println( "ÔªËØÖ®ºÍÎª: "  + sum )
+      println( "å…ƒç´ ä¹‹å’Œä¸º: "  + sum )
       t.productIterator.foreach{ i =>println("Value = " + i )}
-      println("Á¬½ÓºóµÄ×Ö·û´®Îª: " + t.toString() )
-      
+      println("è¿æ¥åçš„å­—ç¬¦ä¸²ä¸º: " + t.toString() )
    }
 
   def main(args: Array[String]) {
       val t = new Tuple2("www.google.com", "www.runoob.com")
      
-      println("½»»»ºóµÄÔª×é: " + t.swap )
+      println("äº¤æ¢åçš„å…ƒç»„: " + t.swap )
       val t1 = new Tuple2(1, 2)
      
-      println("½»»»ºóµÄÔª×é: " + t1.swap )
+      println("äº¤æ¢åçš„å…ƒç»„: " + t1.swap )
    }
    * 
    */
@@ -245,13 +244,13 @@ object TestIterator{
       while (it.hasNext){
          println(it.next())
       }
-//      println("×î´óÔªËØÊÇ£º" + it.max ) //error
-//      println("×îĞ¡ÔªËØÊÇ£º" + it.min ) //error
+//      println("æœ€å¤§å…ƒç´ æ˜¯ï¼š" + it.max ) //error
+//      println("æœ€å°å…ƒç´ æ˜¯ï¼š" + it.min ) //error
       
       val ita = Iterator(20,40,2,50,69, 90)
       val itb = Iterator(20,40,2,50,69, 90)
       
-      println("×î´óÔªËØÊÇ£º" + ita.max )
-      println("×îĞ¡ÔªËØÊÇ£º" + itb.min )
+      println("æœ€å¤§å…ƒç´ æ˜¯ï¼š" + ita.max )
+      println("æœ€å°å…ƒç´ æ˜¯ï¼š" + itb.min )
    }
 }

@@ -1,12 +1,12 @@
 
 
 class TestCompanionClass private(val color:String) {
-  println("´´½¨" + this)
+  println("åˆ›å»º" + this)
   
-  override def toString(): String = "ÑÕÉ«±ê¼Ç£º"+ color
+  override def toString(): String = "é¢œè‰²æ ‡è®°ï¼š"+ color
 }
 
-// °éÉú¶ÔÏó£¬ÓëÀà¹²ÏíÃû×Ö£¬¿ÉÒÔ·ÃÎÊÀàµÄË½ÓĞÊôĞÔºÍ·½·¨
+// ä¼´ç”Ÿå¯¹è±¡ï¼Œä¸ç±»å…±äº«åå­—ï¼Œå¯ä»¥è®¿é—®ç±»çš„ç§æœ‰å±æ€§å’Œæ–¹æ³•
 object TestCompanionClass{
   
     private val markers: Map[String, TestCompanionClass] = Map(
@@ -25,7 +25,7 @@ object TestCompanionClass{
     }
     def main(args: Array[String]) { 
         println(TestCompanionClass("red"))  
-        // µ¥Àıº¯Êıµ÷ÓÃ£¬Ê¡ÂÔÁË.(µã)·ûºÅ  
+        // å•ä¾‹å‡½æ•°è°ƒç”¨ï¼Œçœç•¥äº†.(ç‚¹)ç¬¦å·  
 		println(TestCompanionClass getMarker "blue")  
     }
 }

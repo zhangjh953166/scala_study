@@ -7,8 +7,8 @@ class Point(val xc: Int,val yc: Int) {
    def move(dx: Int, dy: Int) {
       x = x + dx
       y = y + dy
-      println ("x µÄ×ø±êµã: " + x);
-      println ("y µÄ×ø±êµã: " + y);
+      println ("x çš„åæ ‡ç‚¹: " + x);
+      println ("y çš„åæ ‡ç‚¹: " + y);
    }
 }
 /**
@@ -17,14 +17,14 @@ object Test {
    def main(args: Array[String]) {
       val pt = new Point(10, 20);
 
-      // ÒÆµ½Ò»¸öĞÂµÄÎ»ÖÃ
+      // ç§»åˆ°ä¸€ä¸ªæ–°çš„ä½ç½®
       pt.move(10, 10);
    }
    
    def main(args: Array[String]) {
       val loc = new Location(10, 20, 15);
 
-      // ÒÆµ½Ò»¸öĞÂµÄÎ»ÖÃ
+      // ç§»åˆ°ä¸€ä¸ªæ–°çš„ä½ç½®
       loc.move(10, 10, 5);
    }
 }
@@ -38,9 +38,9 @@ class Location(override val xc: Int, override val yc: Int,
       x = x + dx
       y = y + dy
       z = z + dz
-      println ("x µÄ×ø±êµã : " + x);
-      println ("y µÄ×ø±êµã : " + y);
-      println ("z µÄ×ø±êµã : " + z);
+      println ("x çš„åæ ‡ç‚¹ : " + x);
+      println ("y çš„åæ ‡ç‚¹ : " + y);
+      println ("z çš„åæ ‡ç‚¹ : " + z);
    }
 }
 

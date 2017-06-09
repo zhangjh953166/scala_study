@@ -6,37 +6,37 @@ object TestArray {
   def main(args: Array[String]) {
       var myList = Array(1.9, 2.9, 3.4, 3.5)
       
-      // Êä³öËùÓĞÊı×éÔªËØ
+      // è¾“å‡ºæ‰€æœ‰æ•°ç»„å…ƒç´ 
       for ( x <- myList ) {
          println( x )
       }
 
-      // ¼ÆËãÊı×éËùÓĞÔªËØµÄ×ÜºÍ
+      // è®¡ç®—æ•°ç»„æ‰€æœ‰å…ƒç´ çš„æ€»å’Œ
       var total = 0.0;
       for ( i <- 0 to (myList.length - 1)) {
          total += myList(i);
       }
-      println("×ÜºÍÎª " + total);
+      println("ï¿½Üºï¿½Îª " + total);
 
-      // ²éÕÒÊı×éÖĞµÄ×î´óÔªËØ
+      // æŸ¥æ‰¾æ•°ç»„ä¸­çš„æœ€å¤§å…ƒç´ 
       var max = myList(0);
       for ( i <- 1 to (myList.length - 1) ) {
          if (myList(i) > max) max = myList(i);
       }
-      println("×î´óÖµÎª " + max);
+      println("æœ€å¤§å€¼ä¸º " + max);
     
    }
   import Array._
   def main(args: Array[String]) {
       var myMatrix = ofDim[Int](3,3)
-      // ´´½¨¾ØÕó
+      // åˆ›å»ºçŸ©é˜µ
       for (i <- 0 to 2) {
          for ( j <- 0 to 2) {
             myMatrix(i)(j) = j;
          }
       }
       
-      // ´òÓ¡¶şÎ¬ÕóÁĞ
+      // æ‰“å°äºŒç»´é˜µåˆ—
       for (i <- 0 to 2) {
          for ( j <- 0 to 2) {
             print(" " + myMatrix(i)(j));
@@ -51,7 +51,7 @@ object TestArray {
 
       var myList3 =  concat( myList1, myList2)
       
-      // Êä³öËùÓĞÊı×éÔªËØ
+      // è¾“å‡ºæ‰€æœ‰æ•°ç»„å…ƒç´ 
       for ( x <- myList3 ) {
          println( x )
       }
@@ -62,7 +62,7 @@ object TestArray {
       var myList1 = range(10, 20, 2)
       var myList2 = range(10,20)
 
-      // Êä³öËùÓĞÊı×éÔªËØ
+      // è¾“å‡ºæ‰€æœ‰æ•°ç»„å…ƒç´ 
       for ( x <- myList1 ) {
          print( " " + x )
       }

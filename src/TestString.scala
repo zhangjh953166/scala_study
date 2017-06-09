@@ -23,7 +23,7 @@ object TestString {
    * 
    */
   def main(args: Array[String]) {
-      var str1 = "3214321£º";
+      var str1 = "3214321æ•™ç¨‹";
       var str2 =  "    cccccccccc";
       var str3 =  "vfsfaerfeaf";
       var str4 =  "aaaaaaaaaaa";
